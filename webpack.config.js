@@ -1,7 +1,8 @@
 const path = require('path');
+const Jarvis = require("webpack-jarvis");
 
 module.exports = {
-  entry: './src/app.js',
+  entry: './src/playground/hoc.js',
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js'
@@ -24,5 +25,10 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     historyApiFallback: true
-  }
+  },
+  plugins: [
+    new Jarvis({
+      port: 1337 // optional: set a port
+    })
+  ]
 };
