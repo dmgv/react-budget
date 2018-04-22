@@ -1,9 +1,11 @@
-import React, { Fragment } from "react";
+import React from 'react';
+import ExpenseForm from './ExpenseForm';
 
 const AddExpensePage = () => (
-  <Fragment>
-    <h1>Add Expense</h1>{" "}
-  </Fragment>
+  <div>
+    <h1>Add Expense</h1>
+    <ExpenseForm />
+  </div>
 );
 
 export default AddExpensePage;
