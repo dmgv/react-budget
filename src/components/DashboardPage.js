@@ -1,8 +1,9 @@
 import React, { Fragment } from "react";
+import ExpenseList from './ExpenseList';
 
 const DashboardPage = () => (
   <Fragment>
-    <h1>Dashboard Page</h1>
+    <ExpenseList />
   </Fragment>
 );
 
