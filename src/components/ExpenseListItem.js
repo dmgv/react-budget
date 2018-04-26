@@ -1,8 +1,8 @@
-import React from "react";
+import React, {Fragment} from "react";
 import { Link } from "react-router-dom";
 
 const ExpenseListItem = ({ id, description, amount, createdAt }) => (
-  <div>
+  <Fragment>
     <Link to={`/edit/${id}`}>
       <h3>{description}</h3>
     </Link>
@@ -10,7 +10,7 @@ const ExpenseListItem = ({ id, description, amount, createdAt }) => (
       {amount} - {createdAt}
 
     </p>
-  </div>
+    </Fragment>
 );
 
 export default ExpenseListItem;
