@@ -1,9 +1,5 @@
 import React, { Fragment } from "react";
 
-const HelpPage = () => (
-  <Fragment>
-    <h1>Help Page</h1>
-  </Fragment>
-);
+const HelpPage = () => (<Fragment>This is from my help component</Fragment>);
 
 export default HelpPage;
