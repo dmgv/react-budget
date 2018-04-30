@@ -89,3 +89,5 @@ typings/
 .next
 
 public/dist/
+.env.test
+.env.development
