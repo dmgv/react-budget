@@ -5,11 +5,12 @@ exports[`Should have a dashboard 1`] = `
   <h1>
     Opsss! 404
   </h1>
+  404 - 
   <Link
     replace={false}
     to="/"
   >
-    Go Home
+    Go home
   </Link>
 </React.Fragment>
 `;

@@ -13,7 +13,7 @@ exports[`Should render Expense list item 1`] = `
   <p>
     $45.00
     -
-    4th January 1970
+    January 4th, 1970
   </p>
 </React.Fragment>
 `;
