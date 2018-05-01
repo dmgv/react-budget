@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Login 1`] = `
+<React.Fragment>
+  <h1>
+    Login Page
+  </h1>
+  <div
+    className="login"
+  >
+    <form
+      action=""
+    >
+      <button>
+        Entrar com google
+      </button>
+    </form>
+  </div>
+</React.Fragment>
+`;
