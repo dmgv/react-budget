@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import { BrowserRouter, Route, Switch, Link, NavLink } from "react-router-dom";
-
+import { Router, Route, Switch, Link, NavLink } from "react-router-dom";
+import createHistory from "history/createBrowserHistory";
 import LoginPage from "../components/LoginPage";
 import DashboardPage from "../components/DashboardPage";
 import AddExpensePage from "../components/AddExpensePage";
@@ -9,8 +9,10 @@ import HelpPage from "../components/HelpPage";
 import NotFoundPage from "../components/NotFoundPage";
 import Header from "../components/Header";
 
+export const history = createHistory();
+
 const AppRouter = () => (
-  <BrowserRouter>
+  <Router history={history}>
     <Fragment>
       <Header />
       <Switch>
@@ -22,7 +24,7 @@ const AppRouter = () => (
         <Route component={NotFoundPage} />
       </Switch>
     </Fragment>
-  </BrowserRouter>
+  </Router>
 );
 
 export default AppRouter;
