@@ -61,7 +61,7 @@ export default class ExpenseForm extends React.Component {
 
   render() {
     return (
-      <form className="from" onSubmit={this.onSubmit}>
+      <form className="form" onSubmit={this.onSubmit}>
         {this.state.formError && (
           <p className="form__error">{this.state.formError}</p>
         )}
